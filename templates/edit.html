@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% from 'bootstrap5/form.html' import render_form %}
+
+{% block title %}Edit Movies{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1 class="display-4">{{ movie.title }}</h1>
+    <div class="blue-bar" style="width: 100%; height: 5px; background-color: blue; margin-bottom: 20px;"></div>
+    <h3>Edit Movie Rating</h3>
+    <div class="mt-4">
+        {{ render_form(form) }}
+    </div>
+</div>
+{% endblock %}
